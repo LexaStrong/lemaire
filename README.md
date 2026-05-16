@@ -18,24 +18,7 @@ A modern, responsive, and interactive website for **Lemaire Clothing**, a premie
 - **HTML5**: Semantic structure.
 - **CSS3**: Vanilla CSS with modern layout techniques (Flexbox, Grid), custom properties, and advanced animations.
 - **JavaScript**: Lightweight vanilla JS for interactive elements (Intersection Observer, Modals, Smooth Scrolling).
-- **Vite**: Modern frontend tooling for local development and optimized production builds.
 
-## Setup and Development
-
-1. **Install Dependencies**:
-   ```bash
-   npm install
-   ```
-
-2. **Run Locally**:
-   ```bash
-   npm run dev
-   ```
-
-3. **Build for Production**:
-   ```bash
-   npm run build
-   ```
 
 ## Project Structure
 
