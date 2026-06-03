@@ -1,0 +1,35 @@
+{
+  "name": "lemaire",
+  "version": "1.0.0",
+  "description": "A modern, responsive, and interactive website for **Lemaire Clothing**, a premier boutique in Konongo specializing in authentic Ankara designs and hand-sown African elegance.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LexaStrong/lemaire.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/LexaStrong/lemaire/issues"
+  },
+  "homepage": "https://github.com/LexaStrong/lemaire#readme",
+  "dependencies": {
+    "framer-motion": "^12.40.0",
+    "lucide-react": "^1.17.0",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "react-router-dom": "^7.16.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.2",
+    "vite": "^8.0.14",
+    "vite-plugin-pwa": "^1.3.0"
+  }
+}

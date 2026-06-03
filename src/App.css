@@ -1,0 +1,151 @@
+/* ===========================================
+   APP.CSS — Shared React overrides
+   Layout, Navbar, Cart badge, Footer tweaks
+   =========================================== */
+
+/* Navbar */
+.navbar {
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+  background: rgba(10, 10, 10, 0.98);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+  padding: 0.5rem 5%;
+}
+
+/* Highlight active Store link */
+.nav-links a.active {
+  color: var(--primary);
+}
+
+.nav-links a.active::after {
+  width: 100%;
+}
+
+/* Cart button in the navbar */
+.cart-btn {
+  background: transparent;
+  border: none;
+  color: var(--light);
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.cart-btn:hover {
+  color: var(--primary);
+}
+
+.cart-badge {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  background: var(--primary);
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: bold;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+/* Menu Toggle (hamburger) */
+.menu-toggle {
+  background: transparent;
+  border: none;
+  color: var(--light);
+  cursor: pointer;
+  display: none;
+  transition: color 0.3s ease;
+}
+
+.menu-toggle:hover {
+  color: var(--primary);
+}
+
+/* App root */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Hero section */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 6rem 5% 0;
+  position: relative;
+  overflow: hidden;
+  background: var(--dark);
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: -20%;
+  left: -10%;
+  width: 50vw;
+  height: 50vw;
+  background: radial-gradient(circle, rgba(201, 122, 44, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+/* Gallery item scroll animation helper */
+.gallery-item.visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* Info icon overrides (lucide) */
+.info-icon {
+  color: var(--primary);
+  background: rgba(201, 122, 44, 0.1);
+  border-radius: 50%;
+  padding: 0.8rem;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+
+.info-group.clickable {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.info-group.clickable:hover {
+  transform: translateX(5px);
+}
+
+/* Responsive navbar tweaks */
+@media (max-width: 992px) {
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .desktop-socials {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .cart-btn {
+    margin-right: 0.5rem;
+    margin-left: 0;
+  }
+}
